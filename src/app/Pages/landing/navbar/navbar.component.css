@@ -1,0 +1,40 @@
+
+  /* Bootstrap Enhanced Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position :absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  a {
+    color: rgb(250, 5, 5);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #f39c12;
+  }
+  .navbar-toggler-icon {
+    filter: brightness(0) invert(0); /* Makes the icon dark black */
+  }
+  .navbar-toggler {
+    border: 0px solid black !important; 
+  }    
