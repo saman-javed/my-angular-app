@@ -1,0 +1,67 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('/assets/images/searchpg.avif') no-repeat center center fixed;
+    background-size: cover;    
+    font-family: Arial, sans-serif;
+    color: white; 
+     position: relative; 
+}
+.container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 50px;
+}
+.btn{
+    background-color: rgb(240, 105, 57);
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(240, 105, 57);
+    border: none;
+}
+
+
+
+.input-group {
+    width: 100%;
+    max-width: 700px; 
+}
+
+
+.input-group .form-control {
+    flex-grow: 1; 
+    height: 55px;
+    font-size: 18px;
+    background-color: rgb(252, 238, 212);
+}
+
+
+.input-group .btn {
+    height: 55px;
+    font-size: 18px;
+}
+
+
+.row.mt-4 {
+    min-height: 300px;
+}
+.card {
+    background-color: rgb(252, 238, 212);
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .input-group {
+        max-width: 100%;
+    }
+}

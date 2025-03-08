@@ -1,0 +1,39 @@
+
+<div #recipeModal id="recipeModal" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class=" text-title modal-title">{{ recipe?.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          
+          <div class="col-md-6 image-container">
+            <img *ngIf="recipe?.image" [src]="recipe.image" class="img-fluid" alt="Recipe Image">
+          </div>
+
+          
+            <div class=" text col-md-6">
+            <p><strong>Cooking Time:</strong> {{ recipe?.readyInMinutes }} min</p>
+            <p><strong>Servings:</strong> {{ recipe?.servings }}</p>
+
+            <h6><strong>Ingredients:</strong></h6>
+            <ul>
+              <li *ngFor="let ingredient of recipe?.extendedIngredients">{{ ingredient.original }}</li>
+            </ul>
+
+            <p><a *ngIf="recipe?.sourceUrl" [href]="recipe.sourceUrl" target="_blank">View Full Recipe</a></p>
+          </div>
+        </div>
+
+      
+        <div class=" text instructions mt-3">
+          <h6><strong>Instructions:</strong></h6>
+          <p>{{ recipe?.instructions }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

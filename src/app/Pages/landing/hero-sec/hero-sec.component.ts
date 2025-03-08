@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-hero-sec',
   standalone: true,
@@ -10,5 +11,13 @@ import { NavbarComponent } from '../navbar/navbar.component';
   styleUrl: './hero-sec.component.css'
 })
 export class HeroSecComponent {
+  constructor(
+    private router: Router,
+  ) {
 
+  }
+  navigateTosearch(): void {
+    debugger;
+    this.router.navigate(['search']);
+  }
 }

@@ -13,10 +13,4 @@ export class NavbarComponent {
   ) {
 
   }
-
-  navigateTosearch(): void {
-    debugger;
-    this.router.navigate(['search']);
-  }
-
-}
+ }

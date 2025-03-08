@@ -1,0 +1,47 @@
+
+.modal-dialog {
+    max-width: 900px; 
+  }
+  
+  .modal-content {
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .modal-body {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: rgb(250, 242, 229);
+  }
+  
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; 
+    padding: 10px;
+  }
+  .text-title {
+    color: #000000;
+    font-weight: bold;
+    
+  }
+  .text {
+    color: #000000;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  
+  .instructions {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #ddd;
+  }
+  
